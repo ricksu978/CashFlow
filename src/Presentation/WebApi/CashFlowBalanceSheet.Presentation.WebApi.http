@@ -1,0 +1,6 @@
+@CashFlowBalanceSheet.Presentation.WebApi_HostAddress = http://localhost:5027
+
+GET {{CashFlowBalanceSheet.Presentation.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
