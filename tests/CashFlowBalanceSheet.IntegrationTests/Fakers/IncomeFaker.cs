@@ -1,10 +1,5 @@
 ﻿using Bogus;
-using CashFlowBalanceSheet.Domain;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using CashFlow.Domain;
 
 namespace CashFlowBalanceSheet.IntegrationTests.Fakers;
 

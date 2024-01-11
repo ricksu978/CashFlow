@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\Application\CashFlowBalanceSheet.Application.csproj" />
+    <ProjectReference Include="..\..\Core\Application\CashFlow.Application.csproj" />
   </ItemGroup>
 
 </Project>

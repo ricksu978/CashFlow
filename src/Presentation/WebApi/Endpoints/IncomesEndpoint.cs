@@ -1,6 +1,6 @@
 ﻿
 
-using CashFlowBalanceSheet.Application.UseCases.Incomes;
+using CashFlow.Application.UseCases.Incomes;
 
 namespace CashFlowBalanceSheet.Presentation.WebApi.Endpoints;
 

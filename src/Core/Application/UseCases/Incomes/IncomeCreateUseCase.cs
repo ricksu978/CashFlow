@@ -1,5 +1,4 @@
-﻿
-namespace CashFlowBalanceSheet.Application.UseCases.Incomes;
+﻿namespace CashFlow.Application.UseCases.Incomes;
 
 public class IncomeCreateRequest
 {

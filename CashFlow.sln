@@ -17,11 +17,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashFlowBalanceSheet.IntegrationTests", "tests\CashFlowBalanceSheet.IntegrationTests\CashFlowBalanceSheet.IntegrationTests.csproj", "{6A732C7E-2BC3-419F-B694-4E929ADEC2AD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashFlowBalanceSheet.Domain", "src\Core\Domain\CashFlowBalanceSheet.Domain.csproj", "{95AB327D-B47E-454B-92EE-9B0DC264289D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashFlow.Domain", "src\Core\Domain\CashFlow.Domain.csproj", "{95AB327D-B47E-454B-92EE-9B0DC264289D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashFlowBalanceSheet.Application", "src\Core\Application\CashFlowBalanceSheet.Application.csproj", "{3E2F6CF8-9905-4B7D-9619-8D3F93806270}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashFlow.Application", "src\Core\Application\CashFlow.Application.csproj", "{3E2F6CF8-9905-4B7D-9619-8D3F93806270}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashFlowBalanceSheet.Presentation.WebApi", "src\Presentation\WebApi\CashFlowBalanceSheet.Presentation.WebApi.csproj", "{756CDFEE-8511-46F8-AA4A-4FC38F0BEAF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashFlow.Presentation.WebApi", "src\Presentation\WebApi\CashFlow.Presentation.WebApi.csproj", "{7F63E63A-DC33-4714-98CD-8F12AAD53A70}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,10 +45,10 @@ Global
 		{3E2F6CF8-9905-4B7D-9619-8D3F93806270}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E2F6CF8-9905-4B7D-9619-8D3F93806270}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E2F6CF8-9905-4B7D-9619-8D3F93806270}.Release|Any CPU.Build.0 = Release|Any CPU
-		{756CDFEE-8511-46F8-AA4A-4FC38F0BEAF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{756CDFEE-8511-46F8-AA4A-4FC38F0BEAF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{756CDFEE-8511-46F8-AA4A-4FC38F0BEAF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{756CDFEE-8511-46F8-AA4A-4FC38F0BEAF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F63E63A-DC33-4714-98CD-8F12AAD53A70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F63E63A-DC33-4714-98CD-8F12AAD53A70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F63E63A-DC33-4714-98CD-8F12AAD53A70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F63E63A-DC33-4714-98CD-8F12AAD53A70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,7 +61,7 @@ Global
 		{6A732C7E-2BC3-419F-B694-4E929ADEC2AD} = {51797960-D3FF-49D3-B482-3C4FF3035C69}
 		{95AB327D-B47E-454B-92EE-9B0DC264289D} = {7B1EFCA0-7CB5-46C5-A308-6E7B9FC919EF}
 		{3E2F6CF8-9905-4B7D-9619-8D3F93806270} = {7B1EFCA0-7CB5-46C5-A308-6E7B9FC919EF}
-		{756CDFEE-8511-46F8-AA4A-4FC38F0BEAF8} = {3D447450-FDC5-452A-B988-D9BFFAC94AD4}
+		{7F63E63A-DC33-4714-98CD-8F12AAD53A70} = {3D447450-FDC5-452A-B988-D9BFFAC94AD4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {493A3047-3C60-49E3-9DAB-416A792CC6FF}
