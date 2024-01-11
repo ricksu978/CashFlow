@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace CashFlowBalanceSheet.IntegrationTests.Endpoints;
 
-public class IncomeTests
+public class IncomeEndpointTests
 {
     [Fact]
-    public void GiveValidIncom_WhenCreate_ThenReturnSuccess()
+    public void GiveValidCreateIncomeRequest_WhenPost_ThenReturnSuccess()
     {
         // Given
         
