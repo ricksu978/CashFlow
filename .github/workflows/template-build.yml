@@ -10,7 +10,7 @@ on:
 env:
   DOCKER_FILE: './docker/Dockerfile'
   DOTNET_APP_PUBLISH_FOLDER: './publish'
-  DOTNET_APP_PUBLISH_PROJECT: './src/CashFlow.Presentation.WebApi'
+  DOTNET_APP_PUBLISH_PROJECT: './src/Presentation/WebApi/CashFlow.Presentation.WebApi.csproj'
   DOTNET_APP_SOLUTION: './CashFlow.sln'
   DOTNET_CONFIGURATION: 'Release'
   DOTNET_GLOBAL_JSON: './global.json'
