@@ -1,5 +1,5 @@
 name: Template - CI Build
-run-name: CI Build \#{{ github.run_number }}
+run-name: CI Build #{{ github.run_number }}
 
 on:
   push:
