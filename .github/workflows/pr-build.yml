@@ -19,3 +19,5 @@ jobs:
     uses: ./.github/workflows/template-build.yml
     with:
       upload-artifact: false
+      app-solution: './CashFlow.sln'
+      app-publish-project: './src/Presentation/WebApi/CashFlow.Presentation.WebApi.csproj'

@@ -6,15 +6,42 @@ on:
       upload-artifact:
         type: boolean
         required: true
+      app-solution:
+        type: string
+        required: true
+      app-publish-project:
+        type: string
+        required: true
+      global-json:
+        type: string
+        required: false
+        default: './global.json'
+      docker-file:
+        type: string
+        required: false
+        default: './docker/Dockerfile'
+      configuration:
+        type: string
+        required: false
+        default: 'Release'
+      runtime:
+        type: string
+        required: false
+        default: 'linux-x64'
+      test-runsettings:
+        type: string
+        required: false
+        default: './test.runsettings'
 
 env:
-  DOCKER_FILE: './docker/Dockerfile'
+  DOTNET_APP_SOLUTION: ${{ inputs.app-solution}}
+  DOTNET_APP_PUBLISH_PROJECT: ${{ inputs.app-publish-project}}
+  DOTNET_GLOBAL_JSON: ${{ inputs.global-json }}
+  DOCKER_FILE: ${{ inputs.docker-file }}
+  DOTNET_CONFIGURATION: ${{ inputs.configuration }}
+  DOTNET_RUNTIME: ${{ inputs.runtime }}
+  DOTNET_TEST_RUNSETTINGS: ${{ inputs.test-runsettings }}
   DOTNET_APP_PUBLISH_FOLDER: './publish'
-  DOTNET_APP_PUBLISH_PROJECT: './src/Presentation/WebApi/CashFlow.Presentation.WebApi.csproj'
-  DOTNET_APP_SOLUTION: './CashFlow.sln'
-  DOTNET_CONFIGURATION: 'Release'
-  DOTNET_GLOBAL_JSON: './global.json'
-  DOTNET_RUNTIME: 'linux-x64'
   DOTNET_TEST_COVERAGE_FILE: 'coverage.cobertura.xml'
 
 jobs:
@@ -53,9 +80,8 @@ jobs:
           dotnet coverage collect \
             --output ${{ env.DOTNET_TEST_COVERAGE_FILE }} \
             --output-format cobertura \
-            --settings ./tests/.runsettings \
+            --settings ${{ env.DOTNET_TEST_RUNSETTINGS }} \
             "dotnet test ${{ env.DOTNET_APP_SOLUTION }} \
-              --filter DisplayName!~AiServiceTests \
               -c ${{ env.DOTNET_CONFIGURATION }} \
               -r ${{ env.DOTNET_RUNTIME }}"
 
