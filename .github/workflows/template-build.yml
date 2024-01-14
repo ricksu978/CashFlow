@@ -74,6 +74,13 @@ jobs:
         run: |
           dotnet tool restore
 
+      # .Net - Build
+      - name: .Net - Build
+        run: |
+          dotnet build ${{ env.DOTNET_APP_SOLUTION }} \
+            -c ${{ env.DOTNET_CONFIGURATION }} \
+            -r ${{ env.DOTNET_RUNTIME }}
+
       # .Net - Run test and collect data
       - name: .Net - Run test and collect data
         run: |
