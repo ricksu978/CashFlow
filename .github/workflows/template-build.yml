@@ -77,7 +77,7 @@ jobs:
       # .Net - Build
       - name: .Net - Build
         run: |
-          dotnet build ${{ env.DOTNET_APP_SOLUTION }} \
+          dotnet build ${{ env.DOTNET_APP_PUBLISH_PROJECT }} \
             -c ${{ env.DOTNET_CONFIGURATION }} \
             -r ${{ env.DOTNET_RUNTIME }}
 
