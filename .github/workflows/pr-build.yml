@@ -18,6 +18,6 @@ jobs:
     name: CI
     uses: ./.github/workflows/template-build.yml
     with:
-      upload-artifact: false
+      upload-artifact: true
       app-solution: './CashFlow.sln'
       app-publish-project: './src/Presentation/WebApi/CashFlow.Presentation.WebApi.csproj'
