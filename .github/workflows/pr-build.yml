@@ -23,6 +23,7 @@ jobs:
       app-publish-project: './src/Presentation/WebApi/CashFlow.Presentation.WebApi.csproj'
   cd:
     name: CD
+    needs: ci
     uses: ./.github/workflows/template-deploy.yml
     with:
       environment: testing
