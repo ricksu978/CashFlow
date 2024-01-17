@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: main
   push:
-    branches: features/ci-build
+    branches: [main, features/ci-build]
 
 
 concurrency:
@@ -21,3 +21,11 @@ jobs:
       upload-artifact: true
       app-solution: './CashFlow.sln'
       app-publish-project: './src/Presentation/WebApi/CashFlow.Presentation.WebApi.csproj'
+  cd:
+    name: CD
+    needs: ci
+    uses: ./.github/workflows/template-deploy.yml
+    with:
+      environment: testing
+      resource-group: ${{ vars.AZURE_RESOURCE_GROUP }}
+      bicepparam-file: './infra/staging.bicepparam'
