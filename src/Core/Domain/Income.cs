@@ -1,4 +1,4 @@
-﻿namespace CashFlowBalanceSheet.Domain;
+﻿namespace CashFlow.Domain;
 
 public class Income
 {

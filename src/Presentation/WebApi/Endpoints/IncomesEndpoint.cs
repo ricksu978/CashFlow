@@ -1,6 +1,6 @@
 ﻿
 
-using CashFlowBalanceSheet.Application.UseCases.Incomes;
+using CashFlow.Application.UseCases.Incomes;
 
 namespace CashFlowBalanceSheet.Presentation.WebApi.Endpoints;
 
@@ -11,6 +11,6 @@ public class IncomesEndpoint : Endpoint<IncomeCreateRequest, IncomeCreateRespons
 
     public override Task<IncomeCreateResponse> ExecuteAsync(IncomeCreateRequest req, CancellationToken ct)
     {
-        return null;
+        return Task.FromResult(new IncomeCreateResponse());
     }
 }

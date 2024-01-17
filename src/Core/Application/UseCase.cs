@@ -1,4 +1,4 @@
-﻿namespace CashFlowBalanceSheet.Application;
+﻿namespace CashFlow.Application;
 
 public abstract class UseCase<TRequest, TResponse>
     where TRequest : class

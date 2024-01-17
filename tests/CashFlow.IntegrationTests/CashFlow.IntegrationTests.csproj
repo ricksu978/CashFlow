@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Presentation\WebApi\CashFlowBalanceSheet.Presentation.WebApi.csproj" />
+    <ProjectReference Include="..\..\src\Core\Domain\CashFlow.Domain.csproj" />
   </ItemGroup>
 
 </Project>
