@@ -21,3 +21,10 @@ jobs:
       upload-artifact: true
       app-solution: './CashFlow.sln'
       app-publish-project: './src/Presentation/WebApi/CashFlow.Presentation.WebApi.csproj'
+  cd:
+    name: CD
+    uses: ./.github/workflows/template-deploy.yml
+    with:
+      environment: testing
+      resource-group: ${{ vars.AZURE_RESOURCE_GROUP }}
+      bicepparam-file: './infra/staging.bicepparam'
